@@ -4,6 +4,8 @@ $(document).ready(function(){
 		$("html, body").animate({
 			scrollTop: "0px"
 		});
+		$("#myNav").hide();
+		$("body").css("overflow","auto");
 	});
 
 	$(".toggleEspanol").click(function(){
@@ -19,6 +21,13 @@ $(document).ready(function(){
 	$(".about").click(function(){
 		$("#myNav").toggle();
 		$(".dropdown-menu").hide();
+
+		if($('#myNav').is(':visible')){
+			console.log("visible");
+			$("body").css("overflow","hidden");
+		} else {
+			$("body").css("overflow","auto");
+		};
 	});
 
 	$(".selected").click(function(){
@@ -130,7 +139,6 @@ $(document).ready(function(){
 	$(document).on("click", function(event){
         var $trigger = $(".dropdown");
         if($trigger !== event.target && !$trigger.has(event.target).length){
-        	console.log("CLICK CLOSE");
 			$(".dropdown-menu").slideUp("fast");
         }            
     });
