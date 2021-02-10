@@ -358,12 +358,17 @@ padding: 150px 40px 0px 40px;
 		width: 100vw;
 	}
 
+	.headerButton {
+		flex: 1 0 50%;
+	}
+
 	.long {
 		display: none;
 	}
 
 	.short {
 		display: block;
+		text-align: center !important;
 	}
 
 	.headerMini {
