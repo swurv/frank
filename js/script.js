@@ -48,6 +48,10 @@ $(document).ready(function(){
 		$(".pm").show();
 		$(".misc").show();
 		$(".rd").show();
+
+		$("html, body").animate({
+			scrollTop: "0px"
+		});
 		
 		$(".exhProj").fadeIn();
 		$(".idProj").fadeIn();
@@ -65,6 +69,10 @@ $(document).ready(function(){
 		$(".misc").show();
 		$(".rd").show();
 
+		$("html, body").animate({
+			scrollTop: "0px"
+		});
+
 		$(".exhProj").fadeIn();
 		$(".idProj").fadeOut();
 		$(".pmProj").fadeOut();
@@ -80,6 +88,10 @@ $(document).ready(function(){
 		$(".pm").show();
 		$(".misc").show();
 		$(".rd").show();
+
+		$("html, body").animate({
+			scrollTop: "0px"
+		});
 
 		$(".exhProj").fadeOut();
 		$(".idProj").fadeIn();
@@ -97,6 +109,10 @@ $(document).ready(function(){
 		$(".misc").show();
 		$(".rd").show();
 
+		$("html, body").animate({
+			scrollTop: "0px"
+		});
+
 		$(".exhProj").fadeOut();
 		$(".idProj").fadeOut();
 		$(".pmProj").fadeIn();
@@ -113,6 +129,10 @@ $(document).ready(function(){
 		$(".misc").hide();
 		$(".rd").show();
 
+		$("html, body").animate({
+			scrollTop: "0px"
+		});
+
 		$(".exhProj").fadeOut();
 		$(".idProj").fadeOut();
 		$(".pmProj").fadeOut();
@@ -128,6 +148,10 @@ $(document).ready(function(){
 		$(".pm").show();
 		$(".misc").show();
 		$(".rd").hide();
+
+		$("html, body").animate({
+			scrollTop: "0px"
+		});
 
 		$(".exhProj").fadeOut();
 		$(".idProj").fadeOut();
