@@ -19,13 +19,11 @@ body {
 	left: 0;
 	padding: 20px 40px;
 	width: 100vw;
-	/*height: 100px;*/
 	margin-bottom: 100px;
 	position: inline-block;
 	display: flex;
 	align-items: flex-start;
 	z-index: 99;
-	/*background-color: RED;*/
 }
 
 .nav {
@@ -59,14 +57,19 @@ body {
 
 .headerButton:nth-child(2) {
 	flex: 1 0 25%;
-	/*background-color: green;*/
 	text-align: left;
 }
-
-.headerButton:nth-child(3) {
+.headerButton:nth-last-child(1) {
 	flex: 1 0 25%;
-	/*background-color: blue;*/
 	text-align: right;
+}
+
+.long {
+	display: block;
+}
+
+.short {
+	display: none;
 }
 
 .dropdown {
@@ -84,11 +87,9 @@ body {
 }
 
 .selected {
-
 }
 
 .english {
-
 }
 
 .espanol {
@@ -101,7 +102,6 @@ body {
 	font-size: 15px;
 	line-height: 21px;
 	padding: 10px 40px 0px 40px;
-	/*height: 38px;*/
 	background-color: white;
 	position: fixed;
 	width: 100vw;
@@ -181,13 +181,11 @@ body {
 .big {
 	font-size: 48px;
 	line-height: 54px;
-	/*margin-bottom: 54px;*/
 }
 
 .med {
 	font-size: 38px;
 	line-height: 46px;
-	/*margin-bottom: 54px;*/
 }
 
 .sml {
@@ -212,7 +210,6 @@ body {
 
 .full {
 	margin: 100px 0px;
-	/*width: 100vw;*/
 }
 
 .project img {
@@ -241,7 +238,6 @@ padding: 150px 40px 0px 40px;
 }
 
 .headerInfo {
-	/*color: white;*/
 }
 
 .bio {
@@ -358,8 +354,16 @@ padding: 150px 40px 0px 40px;
 		bottom: 0px;
 		left: 0px;
 		background-color: white;
-		padding: 15px 15px 40px 15px;
+		padding: 15px 20px 40px 20px;
 		width: 100vw;
+	}
+
+	.long {
+		display: none;
+	}
+
+	.short {
+		display: block;
 	}
 
 	.headerMini {
@@ -371,7 +375,7 @@ padding: 150px 40px 0px 40px;
 		background-color: white;
 		height: auto;
 		padding-bottom: 0;
-		padding: 15px 15px 10px 15px;
+		padding: 15px 20px 10px 20px;
 	}
 
 	.overlay .header {
@@ -400,7 +404,7 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.overlay {
-		padding: 80px 15px 0px 15px;
+		padding: 80px 20px 0px 20px;
 	}
 
 	.bio {
@@ -412,7 +416,7 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.work {
-		padding: 0px 15px;
+		padding: 0px 20px;
 		margin-top: 150px;
 	}
 
@@ -449,7 +453,7 @@ padding: 150px 40px 0px 40px;
 
 	.project img {
 		width: 100% !important;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	.full {
@@ -457,7 +461,7 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.full img {
-		margin: 0px 0px 15px 0px;
+		margin: 0px 0px 20px 0px;
 		float: none !important;
 	}
 
