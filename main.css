@@ -358,7 +358,7 @@ padding: 150px 40px 0px 40px;
 		bottom: 0px;
 		left: 0px;
 		background-color: white;
-		padding: 15px 20px 40px 20px;
+		padding: 15px 15px 40px 15px;
 		width: 100vw;
 	}
 
@@ -371,7 +371,7 @@ padding: 150px 40px 0px 40px;
 		background-color: white;
 		height: auto;
 		padding-bottom: 0;
-		padding: 15px 20px 10px 20px;
+		padding: 15px 15px 10px 15px;
 	}
 
 	.overlay .header {
@@ -400,7 +400,7 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.overlay {
-		padding: 80px 20px 0px 20px;
+		padding: 80px 15px 0px 15px;
 	}
 
 	.bio {
@@ -412,7 +412,7 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.work {
-		padding: 0px 20px;
+		padding: 0px 15px;
 		margin-top: 150px;
 	}
 
@@ -449,7 +449,7 @@ padding: 150px 40px 0px 40px;
 
 	.project img {
 		width: 100% !important;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 
 	.full {
@@ -457,7 +457,7 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.full img {
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 15px 0px;
 		float: none !important;
 	}
 
