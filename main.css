@@ -341,11 +341,11 @@ padding: 150px 40px 0px 40px;
 @media (max-width: 750px) {
 
 	.name {
-		flex: 2 0 66.6%;
+		flex: 3 0 75%;
 	}
 
 	.nav {
-		flex: 1 0 33.3%;
+		flex: 1 0 25%;
 	}
 
 	.headerButton:nth-child(1) {
@@ -368,7 +368,6 @@ padding: 150px 40px 0px 40px;
 
 	.short {
 		display: block;
-		text-align: center !important;
 	}
 
 	.headerMini {
