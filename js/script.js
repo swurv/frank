@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+	$(".project").hide();
+	$(".swProj").show();
+
+
 	$(".toTop").click(function(){
 		$("html, body").animate({
 			scrollTop: "0px"
@@ -30,7 +34,7 @@ $(document).ready(function(){
 		};
 	});
 
-	$(".selected").click(function(){
+	$(".selected, .selected").click(function(){
 		console.log('open');
 		$(".dropdown-menu").slideToggle("fast");
 	});
@@ -41,7 +45,9 @@ $(document).ready(function(){
 	});
 
 	$(".sw").click(function(){
-		$(".selected").text("Selected Work");
+		$(".selectedEN").text("Selected Work");
+		$(".selectedES").text("Obra Seleccionada");
+
 		$(".sw").hide();
 		$(".exh").show();
 		$(".id").show();
@@ -52,16 +58,15 @@ $(document).ready(function(){
 		$("html, body").animate({
 			scrollTop: "0px"
 		});
-		
-		$(".exhProj").fadeIn();
-		$(".idProj").fadeIn();
-		$(".pmProj").fadeIn();
-		$(".miscProj").fadeIn();
-		$(".rdProj").fadeIn();
+
+		$(".project").fadeOut();
+		$(".swProj").fadeIn();
 	});
 
 	$(".exh").click(function(){
-		$(".selected").text("Exhibitions");
+		$(".selectedEN").text("Exhibitions");
+		$(".selectedES").text("Exposiciones");
+
 		$(".sw").show();
 		$(".exh").hide();
 		$(".id").show();
@@ -73,15 +78,14 @@ $(document).ready(function(){
 			scrollTop: "0px"
 		});
 
+		$(".project").fadeOut();
 		$(".exhProj").fadeIn();
-		$(".idProj").fadeOut();
-		$(".pmProj").fadeOut();
-		$(".miscProj").fadeOut();
-		$(".rdProj").fadeOut();
 	});
 
 	$(".id").click(function(){
-		$(".selected").text("Identity");
+		$(".selectedEN").text("Identity");
+		$(".selectedES").text("Identidad");
+
 		$(".sw").show();
 		$(".exh").show();
 		$(".id").hide();
@@ -93,15 +97,14 @@ $(document).ready(function(){
 			scrollTop: "0px"
 		});
 
-		$(".exhProj").fadeOut();
+		$(".project").fadeOut();
 		$(".idProj").fadeIn();
-		$(".pmProj").fadeOut();
-		$(".miscProj").fadeOut();
-		$(".rdProj").fadeOut();
 	});
 
 	$(".pm").click(function(){
-		$(".selected").text("Printed Matter");
+		$(".selectedEN").text("Printed Matter");
+		$(".selectedES").text("Impresos");
+
 		$(".sw").show();
 		$(".exh").show();
 		$(".id").show();
@@ -113,15 +116,14 @@ $(document).ready(function(){
 			scrollTop: "0px"
 		});
 
-		$(".exhProj").fadeOut();
-		$(".idProj").fadeOut();
+		$(".project").fadeOut();
 		$(".pmProj").fadeIn();
-		$(".miscProj").fadeOut();
-		$(".rdProj").fadeOut();
 	});
 
 	$(".misc").click(function(){
-		$(".selected").text("Miscellaneous");
+		$(".selectedEN").text("Miscellaneous");
+		$(".selectedES").text("Diverso");
+
 		$(".sw").show();
 		$(".exh").show();
 		$(".id").show();
@@ -133,15 +135,14 @@ $(document).ready(function(){
 			scrollTop: "0px"
 		});
 
-		$(".exhProj").fadeOut();
-		$(".idProj").fadeOut();
-		$(".pmProj").fadeOut();
+		$(".project").fadeOut();
 		$(".miscProj").fadeIn();
-		$(".rdProj").fadeOut();
 	});
 
 	$(".rd").click(function(){
-		$(".selected").text("Rejected Designs");
+		$(".selectedEN").text("Rejected Designs");
+		$(".selectedES").text("Diseños Rechazados");
+
 		$(".sw").show();
 		$(".exh").show();
 		$(".id").show();
@@ -153,10 +154,7 @@ $(document).ready(function(){
 			scrollTop: "0px"
 		});
 
-		$(".exhProj").fadeOut();
-		$(".idProj").fadeOut();
-		$(".pmProj").fadeOut();
-		$(".miscProj").fadeOut();
+		$(".project").fadeOut();
 		$(".rdProj").fadeIn();
 	});
 

@@ -26,8 +26,12 @@ body {
 	z-index: 99;
 }
 
+.name {
+	flex: 1 0 0;
+}
+
 .nav {
-	flex: 1 0 50%;
+	flex: 1 0 0;
 	display: flex;
 	align-content: flex-start;
 	justify-content: space-between;
@@ -44,23 +48,31 @@ body {
 	cursor: pointer;
 }
 
-.headerButton:nth-child(1) {
-	flex: 2 0 50%;
-	width: 50%;
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 2px solid;
+	cursor: pointer;
+}
+
+.dropdownFlex {
+	flex: 2 0 0;
 	text-align: left;
 	position: relative;
 	bottom: auto;
 	left: auto;
-	background-color: none;
-	padding: 0px;
 }
 
-.headerButton:nth-child(2) {
-	flex: 1 0 25%;
+.languageFlex {
+	flex: 1 0 0;
 	text-align: left;
 }
-.headerButton:nth-last-child(1) {
-	flex: 1 0 25%;
+
+.menuFlex {
+	flex: 1 0 0;
 	text-align: right;
 }
 
@@ -121,19 +133,11 @@ body {
 	cursor: pointer;
 }
 
-.name {
-	flex: 1 0 50%;
-}
-
 .work {
 	position: relative;
 	padding: 0px 40px;
 	z-index: 1;
 	margin-top: 300px; 
-}
-
-.project {
-
 }
 
 .intro {
@@ -153,7 +157,7 @@ body {
 }
 
 .intro > .description div {
-	max-width: 1200px;	
+	max-width: 750px;	
 }
 
 .projectTitle {
@@ -242,6 +246,7 @@ padding: 150px 40px 0px 40px;
 
 .bio {
 	display: flex;
+	padding: 0;
 }
 
 .aboutMe {
@@ -251,6 +256,14 @@ padding: 150px 40px 0px 40px;
 
 .sw {
 	display: none;
+}
+
+.footer {
+	padding: 0px 0px 200px 0px;
+	display: block;
+	position: relative;
+	clear: both;
+	vertical-align: bottom;
 }
 
 @media (max-width: 1400px) {
@@ -269,18 +282,12 @@ padding: 150px 40px 0px 40px;
 		line-height: 24px;
 	}
 
-	.header span:hover {
-		border-bottom: 1.5px solid;
-		cursor: pointer;
-	}
-
 	.work {
 		padding: 0px 35px;
 		margin-top: 225px; 
 	}
 
 	.project img {
-		width: 100%;
 		margin-bottom: 70px;
 	}
 
@@ -298,21 +305,21 @@ padding: 150px 40px 0px 40px;
 }
 
 @media (max-width: 950px) {
-	.big {
-		font-size: 28px;
-		line-height: 32px;
-		margin-bottom: 32px;
+
+	.name {
+		flex: 3 0 75%;
 	}
 
-	.med {
-		font-size: 21px;
-		line-height: 24px;
-		margin-bottom: 24px;
+	.nav {
+		flex: 1 0 25%;
 	}
 
-	.sml {
-		font-size: 15px;
-		line-height: 18px;
+	.header {
+		position: fixed;
+		background-color: white;
+		height: auto;
+		padding-bottom: 0;
+		padding: 15px 30px 10px 30px;
 	}
 
 	.work {
@@ -320,21 +327,99 @@ padding: 150px 40px 0px 40px;
 		margin-top: 175px; 
 	}
 
+	.intro {
+		display: block;
+	}
+
+	.intro > .description {
+		top: 0px;
+		margin-bottom: 30px;
+		position: relative;
+		display: block;
+		padding-right: 20%;
+	}
+
+	.intro > .images {
+		position: relative;
+		display: block;
+	}
+
+	.project {
+		margin-bottom: 100px;
+	}
+
 	.project img {
-		width: 100%;
-		margin-bottom: 60px;
+		width: 100% !important;
+		margin-bottom: 30px;
+	}
+
+	.full {
+		margin: 0px;
+		position: relative;
+		display: block;
+	}
+
+	.full img {
+		margin: 0px 0px 20px 0px;
+		float: none !important;
 	}
 
 	.overlay {
 		padding: 150px 30px 0px 30px;
 	}
 
-	.header {
-		padding: 20px 30px;
+	.headerMini {
+		display: none !important;
 	}
 
-	.headerMini {
-		padding: 10px 30px 0px 30px;
+	.dropdownFlex {
+		flex: none;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		background-color: white;
+		padding: 15px 30px 10px 30px;
+		width: 100vw;
+	}
+
+	.headerButton {
+		flex: 1 0 0;
+	}
+
+	.long {
+		display: none;
+	}
+
+	.short {
+		display: block;
+	}
+
+	.overlay .header {
+		background-color: black;
+	}
+
+	.overlay .dropdownFlex {
+		display: none;
+	}
+
+	.bio {
+		display: block;
+		padding-right: 25%;
+	}
+
+	.aboutMe {
+		padding-right: 0;
+		margin-bottom: 32px;
+	}
+
+	.header span:hover {
+		border-bottom: 1px solid;
+		cursor: pointer;
+	}
+
+	a:hover {
+		border-bottom: 1px solid;
+		cursor: pointer;
 	}
 }
 
@@ -348,7 +433,7 @@ padding: 150px 40px 0px 40px;
 		flex: 1 0 25%;
 	}
 
-	.headerButton:nth-child(1) {
+	.dropdownFlex {
 		flex: none;
 		position: fixed;
 		bottom: 0px;
@@ -359,7 +444,7 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.headerButton {
-		flex: 1 0 50%;
+		flex: 1 0 0;
 	}
 
 	.long {
@@ -386,7 +471,7 @@ padding: 150px 40px 0px 40px;
 		background-color: black;
 	}
 
-	.overlay .headerButton:nth-child(1) {
+	.overlay .dropdownFlex {
 		display: none;
 	}
 
@@ -413,6 +498,8 @@ padding: 150px 40px 0px 40px;
 
 	.bio {
 		display: block;
+		padding-right: 0;
+
 	}
 
 	.aboutMe {
@@ -425,7 +512,6 @@ padding: 150px 40px 0px 40px;
 	}
 
 	.project img {
-		width: 100%;
 		margin-bottom: 50px;
 	}
 
@@ -446,11 +532,6 @@ padding: 150px 40px 0px 40px;
 		display: block;
 	}
 
-	.full {
-		position: relative;
-		display: block;
-	}
-
 	.project {
 		margin-bottom: 100px;
 	}
@@ -462,6 +543,8 @@ padding: 150px 40px 0px 40px;
 
 	.full {
 		margin: 0px;
+		position: relative;
+		display: block;
 	}
 
 	.full img {
