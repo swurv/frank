@@ -183,14 +183,4 @@ $(document).ready(function(){
     	};
     });
 
-	// $(window).scroll(function() {
-	// 	if ($(document).scrollTop() > 200) {
-	// 		// $('.nav').slideDown();
-	// 		$(".nav").css("position","fixed");
-	// 	}	else {
-	//         // $('.nav').slideUp();
-	//         $(".nav").css("position","absolute");
-	//     }
-	// });
-
 });
